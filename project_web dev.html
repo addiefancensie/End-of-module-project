@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewpoint" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="project_web dev.css">
+  <title>Python Academy</title> 
+</head>
+ 
+<body> 
+
+  <ul class="topnav">
+    <li><a class="active" href="#home">Home</a></li>
+    <li><a class="active" href="#news">News Feed</a></li>
+    <li><a class="active" href="#users">Users</a></li>
+    <li><a class="active" href="#admin">Admin</a></li>
+  </ul>
+   
+<h1><b><i>Python Academy<i><b></h1><br><br>
+
+  <h3 align  ="center">To create a new user profile click below</h3>
+
+<h3 align="center">
+
+  <a href="create_form.html"><button type="button"class="btn btn-primary">Create user</button></a>
+ </button>
+</h3>
+      
+  <!--Cards In Column form, 3 columns per row-->
+  <div class="container">
+    <div class="row">
+      <div class="col-sm">
+
+        <!--Employee 1: Jessica Pillay-->
+        <div class="card">
+          <img src="OIPARB17IYL.jpg" alt="jlaw" class="profile-image">
+          <h4 class="card-title">Jessica Pillay</h4>
+          <p class="card-text">Email: pillayj@pyacademy.com</p>
+          <p class="card-text">Moblie Number: 0734561234</p>
+          <p class="card-text">Landline: 0216541234</p>
+          <button type="button" class="btn-secondary btn-sm" data-toggle="modal" data-target="#employee1Modal">More info</button>
+          <button type="button" class="btn-danger btn-sm" data-toggle="modal" data-target="#delemployee1">Delete profile</button>
+        </div>
+      </div>
+      <div class="col-sm">
+
+        <!--Employee 2: Kenneth Lamar -->
+        <div class="card">
+          <img src="OIPCMCWUM2G.jpg" alt="shad" class="profile-image">
+          <h4 class="card-title">Kenneth Lamar</h4>
+          <p class="card-text">Email: kennethlamar@gmail.com</p>
+          <p class="card-text">Moblie Number: 0634567894</p>
+          <p class="card-text">Landline: 0216789543</p>
+          <button type="button" class="btn-secondary btn-sm" data-toggle="modal" data-target="#employee2Modal">More info</button>
+          <button type="button" class="btn-danger btn-sm" data-toggle="modal" data-target="#delemployee2">Delete profile</button>
+        </div>
+      </div>
+      <div class="col-sm">
+
+        <!--Employee 3: William King-->
+        <div class="card">
+          <img src="OIP.jpg" alt="Jeezy" class="profile-image">
+          <h4 class="card-title">William King</h4>
+          <p class="card-text">Email: kingwilliam@alpha.com</p>
+          <p class="card-text">Moblie Number: 0735972343</p>
+          <p class="card-text">Landline: 0216458976</p>
+          <button type="button" class="btn-secondary btn-sm" data-toggle="modal" data-target="#employee3Modal">More info</button>
+          <button type="button" class="btn-danger btn-sm" data-toggle="modal" data-target="#delemployee3">Delete profile</button>
+        </div>
+      </div>
+      <div class="col-sm">
+
+        <!--Employee 4: Jennifer Rae-->
+        <div class="card">
+          <img src="OIPIZK267TX.jpg" alt="Janni" class="profile-image">
+          <h4 class="card-title">Jennifer Rae</h4>
+          <p class="card-text">Email: jayrae@gmail.com</p>
+          <p class="card-text">Moblie Number: 0826574343</p>
+          <p class="card-text">Landline: 0216357878</p>
+          <button type="button" class="btn-secondary btn-sm" data-toggle="modal" data-target="#employee4Modal">More info</button>
+          <button type="button" class="btn-danger btn-sm" data-toggle="modal" data-target="#delemployee4">Delete profile</button>
+        </div>
+      </div>
+      <div class="col-sm">
+
+        <!--Employee 5: Tyra-Rae Jonas-->
+        <div class="card">
+          <img src="OIPHMEADWFT.jpg" alt="jlo" class="profile-image">
+          <h4 class="card-title">Tyra-Rae Jonas</h4>
+          <p class="card-text">Email: tyrajonas@pyacademy.com</p>
+          <p class="card-text">Moblie Number:0826547987 </p>
+          <p class="card-text">Landline: 0217893456</p>
+          <button type="button" class="btn-secondary btn-sm" data-toggle="modal" data-target="#employee5Modal">More info</button>
+          <button type="button" class="btn-danger btn-sm" data-toggle="modal" data-target="#delemployee5">Delete profile</button>
+        </div>
+      </div>
+      <div class="col-sm">
+
+        <!--Employee 6: Sarah Wayans-->
+        <div class="card">
+          <img src="scarlett.jpg" alt="scarlett" class="profile-image">
+          <h4 class="card-title">Sarah Wayans</h4>
+          <p class="card-text">Email: swayans@pyacademy.com</p>
+          <p class="card-text">Moblie Number: 0826542783</p>
+          <p class="card-text">Landline: 0216743526</p>
+          <button type="button" class="btn-secondary btn-sm" data-toggle="modal" data-target="#employee6Modal">More info</button>
+          <button type="button" class="btn-danger btn-sm" data-toggle="modal" data-target="#delemployee6">Delete profile</button>
+        </div>
+      </div>
+    </div>
+
+    <!--Modal for Jessica Pillay-->
+    <div class="modal fade" id="employee1Modal">
+      <div class="modal-dialog modal-dialog-scrollable modal-md">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3>More information</h3>
+            <button type="button" class="close" data-dismiss="modal">x</button>
+          </div>
+          <div class="modal-body">
+            <p>
+             <ul>
+                <li>Home Address: 198 Dela-Rey Road , Hillow 7870</li>
+                <li>Next of kin details:</li>
+                <ul>
+                    <li>Name: Melachai Pillay</li>
+                    <li>Relationship: Son</li>
+                    <li>Email address: chailay@gmail.com</li>
+                    <li>Cellphone number: 0769870987</li>
+                </ul>
+             </ul> 
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Modal for Jessica Pillay-->
+    <div class="modal fade" id="delemployee1">
+        <div class="modal-dialog modal-dialog-scrollable modal-md">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3>Are you sure you want to delete this profile ?</h3>
+            </div>
+            <div class="modal-body">
+                <button class="btn btn-primary">Yes</button>
+                <button class="btn btn-primary">No</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    <!--Modal for Kenneth Lamar-->
+    <div class="modal fade" id="employee2Modal">
+      <div class="modal-dialog modal-dialog-scrollable modal-md">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3>More Information</h3>
+            <button type="button" class="close" data-dismiss="modal">x</button>
+          </div>
+          <div class="modal-body">
+            <p>
+             <ul>
+                <li>Home Address: 98 Pillay Hill , Parkway 7878</li>
+                <li>Next of kin details:</li>
+                <ul>
+                    <li>Name: Shaylie Lamar</li>
+                    <li>Relationship: Sister</li>
+                    <li>Email address: shaymar@gmail.com</li>
+                    <li>Cellphone number: 0813458765</li>
+                </ul>
+             </ul> 
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Modal for Kenneth Lamar-->
+    <div class="modal fade" id="delemployee2">
+        <div class="modal-dialog modal-dialog-scrollable modal-md">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3>Are you sure you want to delete this profile ?</h3>
+            </div>
+            <div class="modal-body">
+                <button class="btn btn-primary">Yes</button>
+                <button class="btn btn-primary">No</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    <!--Modal for William King-->
+    <div class="modal fade" id="employee3Modal">
+      <div class="modal-dialog modal-dialog-scrollable modal-md">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3>More Information</h3>
+            <button type="button" class="close" data-dismiss="modal">x</button>
+          </div>
+          <div class="modal-body">
+            <p>
+             <ul>
+                <li>Home Address: 678 Kallum Street, Vitehoek 4321</li>
+                <li>Next of kin details:</li>
+                <ul>
+                    <li>Name: Jeannie King</li>
+                    <li>Relationship: Daughter</li>
+                    <li>Email address: jeanking@gmail.com</li>
+                    <li>Cellphone number: 0624567898</li>
+                </ul>
+             </ul> 
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Modal for William King-->
+    <div class="modal fade" id="delemployee3">
+        <div class="modal-dialog modal-dialog-scrollable modal-md">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3>Are you sure you want to delete this profile ?</h3>
+            </div>
+            <div class="modal-body">
+                <button class="btn btn-primary">Yes</button>
+                <button class="btn btn-primary">No</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!--Modal for Jennifer Rae-->
+    <div class="modal fade" id="employee4Modal">
+      <div class="modal-dialog modal-dialog-scrollable modal-md">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3>More Information</h3>
+            <button type="button" class="close" data-dismiss="modal">x</button>
+          </div>
+          <div class="modal-body">
+            <p>
+             <ul>
+                <li>Home Address: 2345 Heavensway Street, Pilloway 1612</li>
+                <li>Next of kin details:</li>
+                <ul>
+                    <li>Name: Emile Rae</li>
+                    <li>Relationship: Son</li>
+                    <li>Email address: mileyray@cargoway.com</li>
+                    <li>Cellphone number: 0824567898</li>
+                </ul>
+             </ul> 
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Modal for Jennifer Rae-->
+    <div class="modal fade" id="delemployee4">
+        <div class="modal-dialog modal-dialog-scrollable modal-md">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3>Are you sure you want to delete this profile ?</h3>
+            </div>
+            <div class="modal-body">
+                <button class="btn btn-primary">Yes</button>
+                <button class="btn btn-primary">No</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    <!--Modal for Tyra-Rae Jonas-->
+    <div class="modal fade" id="employee5Modal">
+      <div class="modal-dialog modal-dialog-scrollable modal-md">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3>More Information</h3>
+            <button type="button" class="close" data-dismiss="modal">x</button>
+          </div>
+          <div class="modal-body">
+            <p>
+             <ul>
+                <li>Home Address: 543 Burnerbridge Street , Firetown 3434</li>
+                <li>Next of kin details:</li>
+                <ul>
+                    <li>Name: Shad Jonas</li>
+                    <li>Relationship: Husband</li>
+                    <li>Email address: sjonas@businessjoe.com</li>
+                    <li>Cellphone number: 0817654320</li>
+                </ul>
+             </ul> 
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Modal for Tyra-Rae Jonas-->
+    <div class="modal fade" id="delemployee5">
+        <div class="modal-dialog modal-dialog-scrollable modal-md">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3>Are you sure you want to delete this profile ?</h3>
+            </div>
+            <div class="modal-body">
+                <button class="btn btn-primary">Yes</button>
+                <button class="btn btn-primary">No</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Modal for Sarah Wayans-->
+    <div class="modal fade" id="employee6Modal">
+        <div class="modal-dialog modal-dialog-scrollable modal-md">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3>More Information</h3>
+              <button type="button" class="close" data-dismiss="modal">x</button>
+            </div>
+            <div class="modal-body">
+              <p>
+               <ul>
+                  <li>Home Address: 43 Postnet Street , Parkaway 5543</li>
+                  <li>Next of kin details:</li>
+                  <ul>
+                      <li>Name: Kara Mane</li>
+                      <li>Relationship: Mother</li>
+                      <li>Email address: karamane@mellow.com</li>
+                      <li>Cellphone number: 0729876543</li>
+                  </ul>
+               </ul> 
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!--Modal for Sarah Wayans-->
+    <div class="modal fade" id="delemployee6">
+        <div class="modal-dialog modal-dialog-scrollable modal-md">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3>Are you sure you want to delete this profile ?</h3>
+            </div>
+            <div class="modal-body">
+                <button class="btn btn-primary">Yes</button>
+                <button class="btn btn-primary">No</button>
+            </div>
+          </div>
+        </div>
+      </div>  
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+</body>
+</html>
